@@ -1,0 +1,35 @@
+{
+"name": "扩展搜索Beta版",
+"version": "0.1",
+"description": "自定义搜索集成工具",
+"manifest_version": 2,
+"options_page": "options.html",
+"icons": { 
+    "16" : "imgs/icon_16.png",
+    "128" : "imgs/icon_128.png"
+  },
+"background": {
+    "scripts": ["js/background.js"]
+  },
+"permissions": [
+    "tabs",
+    "contextMenus",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+    ],
+"omnibox": {
+    "keyword": "ss"
+  },
+"browser_action": {
+    "default_title": "自定义搜索工具",
+    "default_icon": "imgs/icon_16.png",
+    "default_popup": "popup.html"
+    },
+"content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["js/content.js"]
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/z.js"></script>
+    <script src="js/require.js"></script>
+    <style>
+    #content{width:200px;
+        font-size: 18px;
+        line-height: 25px;
+        padding:15px 10px;
+    }
+    header {
+        position: relative;
+    }
+    #z_name{height: 24px;
+        line-height: 24px;
+        padding-left: 22px;
+        font-size: 16px;
+        font-weight: bolder;
+        background: url(imgs/icon_16.png) no-repeat left center;
+    }
+    #z_options {background: url(/imgs/set.png) center center no-repeat #FAFAFA;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 0;
+        top: 0;
+    }
+    .zn{
+        color: #aaa;
+        margin-top: 10px;
+    }
+    .cb{
+        padding:10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .line label{
+        padding: 0 3px;
+        display: block;
+        float: left;
+    }
+    #z_link{
+        padding-top: 10px;
+        color: #ccc;
+        font-size: 12px;
+    }
+    #z_link a:hover{
+        color: #099;
+    }
+    #ewm{padding: 10px;
+        text-align: center;
+    }
+    #ewm:hover{
+        color:#099;
+        cursor:pointer;
+    }
+    #code{
+        padding:0 10px;
+        text-align: center;
+    }
+    </style>
+  </head>
+<body>
+    <div id="content">
+        <header>
+            <div id="z_name">右键搜索设置</div>
+            <a id="z_options" href="/options.html" target="_blank" title="设置"></a>
+        </header>
+        <div class="cb">
+            <div class="zn">默认自定义右键搜索</div>
+            <div class="line" id="ss"></div>
+            <div class="cbox"></div>
+            <div class="zn">附加关键字</div>
+            <div class="line" id="kws"></div>
+            <div class="cbox"></div>
+        </div>
+        <div id="ewm">通过手机浏览当前页面</div>
+        <div id="code"></div>
+        <div id="z_link">
+            访问：<a href="http://www.70zhen.com/" target="_blank">奇石镇</a>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>

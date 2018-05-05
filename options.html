@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/z.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+    <style>
+    body{background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+        background-color:#282828;
+        background-size:16px 16px;
+    }
+    #box{width:500px;
+        margin:0px auto;
+        margin-top: 150px;
+        background-color: #fff;
+        font-size: 16px;
+    }
+    #box h1{font-size:28px;
+        line-height: 60px;
+        color:#666;
+        text-align: center;
+        border-bottom: 2px dashed #099;
+    }
+    .ws{
+        color: #3891eb;
+        font-weight: bolder;
+    }
+    .ws li{
+        padding: 0 2px;
+        float: left;
+        color: #3891eb;
+        border:1px solid #fff;
+    }
+    .ws li:hover{
+        background-color: #999;
+        border:1px solid #aaa;
+        cursor:pointer;
+    }
+    .delete{
+        color:#ccc;
+    }
+    .delete:hover{
+        color:#f00;
+    }
+
+    </style>
+  </head>
+<body>
+
+<div class="m-form" id="box">
+        <fieldset>
+            <h1>自定义搜索设置</h1>
+            <div class="formitm">
+                <label class="lab">右键搜索：</label>
+                <div class="ipt">
+                    <div class="domain">
+                        <ul class="ws" id="allsshtml">
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="cbox"></div>
+            <div class="formitm">
+                <label class="lab">添加搜索：</label>
+                <div class="ipt">
+                <form action="">
+                    <input name="kwn" type="text" value="" class="u-ipt u-ipt-1" id="ssn" placeholder="搜索名称" /> 
+                    <input name="kwl" type="text" value="" class="u-ipt" id="ssl" placeholder="搜索链接" />
+                    <button class="u-btn u-btn-sm" id="sbtn" type="button">添加</button>
+                    <p>添加自定义搜索</p>
+                </form>
+                </div>
+            </div>
+            <div class="formitm">
+                <label class="lab">关键字：</label>
+                <div class="ipt">
+                    <div class="domain">
+                        <ul class="ws" id="kwhtml">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cbox"></div>
+            <div class="formitm">
+                <div class="ipt">
+                    <input type="text" class="u-ipt" id="kwn"/>
+                    <button class="u-btn u-btn-sm u-btn-c3" id="kwbtn" type="button">添加</button>
+                    <p>添加附加关键字,同时添加多个用 “,” 隔开</p>
+                </div>
+            </div>
+        </fieldset>
+        <button class="u-btn u-btn-sm" id="delall" type="button">清空全部数据</button>
+        <button class="u-btn u-btn-sm" id="delallss" type="button">清空搜索数据</button>
+        <button class="u-btn u-btn-sm" id="delallkw" type="button">清空关键词数据</button>
+</div>
+
+
+</body>
+</html>
